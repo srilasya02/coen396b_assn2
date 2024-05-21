@@ -34,6 +34,7 @@ substream = list(data["Substream"].unique())
 waste_type = list(data["Waste"].unique())
 
 app = Dash(__name__, external_stylesheets=[dbc.themes.LUX])
+server = app.server
 
 # Build components
 mytitle = dcc.Markdown(children='''## SCU Waste Collection Data''')
